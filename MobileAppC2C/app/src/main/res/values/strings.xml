@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BookTrading</string>
+
+    <!--Initialize Activity-->
+    <string name="desc_initialize_background">Background Image for InitializeActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FullName</string>
+    <string name="nav_header_subtitle">PhoneNumber</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_find_target">Map</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="title_activity_my_inventory">My Inventory</string>
+    <string name="title_activity_add_book">New Book</string>
+    <string name="title_activity_transaction_history">My Transactions</string>
+    <string name="title_activity_preparing_finding">My Offer</string>
+    <string name="title_activity_target_profile">Target Profile</string>
+
+    <string-array name="prepare_buysell_label">
+        <item>Buy</item>
+        <item>Sell</item>
+    </string-array>
+
+    <string-array name="prepare_buysell_value">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="btn_send">Send</string>
+    <string name="google_maps_key">AIzaSyDUftIPRSTh5exvA6ZXRj1HXOp_j9PMyHg</string>
+</resources>

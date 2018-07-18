@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_account_box_black_24dp"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_transacts"
+            android:icon="@drawable/baseline_history_black_24dp"
+            android:title="Transactions History" />
+        <item
+            android:id="@+id/nav_close"
+            android:icon="@drawable/baseline_close_black_24dp"
+            android:title="Exit" />
+    </group>
+
+
+</menu>

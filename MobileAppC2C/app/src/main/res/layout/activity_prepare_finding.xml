@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrepareFindingActivity">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_local_grocery_store_black_48dp" />
+
+    <View
+        android:id="@+id/view_horizontalBreak"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_logo" />
+
+    <TextView
+        android:id="@+id/textView_BookNameLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Book"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_horizontalBreak" />
+
+    <TextView
+        android:id="@+id/textView_BookPriceLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BookNameLabel" />
+
+    <TextView
+        android:id="@+id/textView_isBuyLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="I want to "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BookPriceLabel" />
+
+    <TextView
+        android:id="@+id/textView_HopsLabel"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Hops"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_isBuyLabel" />
+
+    <Button
+        android:id="@+id/button_Scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Scan"
+        android:onClick="onClick_Scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_BookPrice"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Book Price"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_BookPriceLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_BookPriceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BookPriceLabel" />
+
+    <Spinner
+        android:id="@+id/spinner_isBuy"
+        android:layout_width="135dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView_isBuyLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_isBuyLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_isBuyLabel" />
+
+    <EditText
+        android:id="@+id/editText_Hops"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="1"
+        android:inputType="number"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView_HopsLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_HopsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_HopsLabel" />
+
+    <EditText
+        android:id="@+id/editText_BookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_BookNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/textView_BookNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_BookNameLabel"
+        app:layout_constraintVertical_bias="0.492" />
+</android.support.constraint.ConstraintLayout>

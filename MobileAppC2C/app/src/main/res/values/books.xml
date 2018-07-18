@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Currency Array -->
+    <string-array name="book_array">
+        <item value="0" />
+        <item value="1">Cracking the Coding Interview: 189 Programming Questions and Solutions</item>
+        <item value="2">Python Crash Course: A Hands-On, Project-Based Introduction to Programming</item>
+        <item value="3">Clean Code: A Handbook of Agile Software Craftsmanship</item>
+        <item value="4">Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython</item>
+        <item value="5">Effective Java (3rd Edition)</item>
+        <item value="6">Programming Arduino: Getting Started with Sketches, Second Edition (Tab)</item>
+        <item value="7">HTML and CSS: Design and Build Websites</item>
+        <item value="8">SQL in 10 Minutes, Sams Teach Yourself (4th Edition)</item>
+        <item value="9">C Programming Language, 2nd Edition</item>
+        <item value="10">Head First Java, 2nd Edition</item>
+    </string-array>
+</resources>
