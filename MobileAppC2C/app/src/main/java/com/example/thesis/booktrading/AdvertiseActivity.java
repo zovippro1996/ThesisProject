@@ -2,11 +2,9 @@ package com.example.thesis.booktrading;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.net.wifi.WifiManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.format.Formatter;
 import android.util.Log;
 import android.util.Xml;
 import android.view.View;
@@ -15,14 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.thesis.booktrading.gnutellaprotocol.GnutellaCoordinator;
-import com.example.thesis.booktrading.gnutellaprotocol.Listener;
-import com.example.thesis.booktrading.gnutellaprotocol.PeriodicConnector;
-import com.example.thesis.booktrading.gnutellaprotocol.PingHandler;
-import com.example.thesis.booktrading.gnutellaprotocol.Pinger;
-import com.example.thesis.booktrading.gnutellaprotocol.Preferences;
-import com.example.thesis.booktrading.gnutellaprotocol.QHandler;
-import com.example.thesis.booktrading.gnutellaprotocol.Searcher;
-import com.example.thesis.booktrading.gnutellaprotocol.SharedDirectory;
 import com.example.thesis.booktrading.helper.AsyncTaskIpify;
 import com.example.thesis.booktrading.helper.DatabaseHelper;
 import com.google.android.gms.nearby.Nearby;
@@ -250,7 +240,8 @@ public class AdvertiseActivity extends AppCompatActivity {
 
                     String testIPString = info.getEndpointName() + ":8089";
                     gnutellaCoordinator.connectNewHost(info.getEndpointName() + ":8089");
-
+                    textView_waitingStatus.setText("Found Peers!");
+                    popupToast("Found Peer : " + info.getEndpointName());
                 }
 
                 @Override

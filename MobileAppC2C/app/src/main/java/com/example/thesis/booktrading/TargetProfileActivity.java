@@ -57,11 +57,10 @@ public class TargetProfileActivity extends AppCompatActivity {
 
         textview_ServerPoint = findViewById(R.id.textView_ServerPoint);
 
-        //Some url endpoint that you may have
-        String myUrl = "http://192.168.0.102:8081/api/users?phone=" + targetPhone;
+        //Server URL
+        String myUrl = "http://192.168.0.107:8081/api/users?phone=" + targetPhone;
         //String to place our result in
         String result = "";
-        //Instantiate new instance of our class
         AsyncTaskIpify getRequest = new AsyncTaskIpify();
 
         try {
@@ -152,13 +151,14 @@ public class TargetProfileActivity extends AppCompatActivity {
         HttpPostRatingAsyncTask task = new HttpPostRatingAsyncTask(dataSend);
         String result = "";
         try {
-            result = task.execute("http://192.168.0.102:8081/api/rating").get();
-            popupToast("Done result = " + result.toString());
+            //Server URL
+            result = task.execute("http://192.168.0.107:8081/api/rating").get();
+            popupToast("Done = " + result.toString());
             Intent intent = new Intent(this, DashboardActivity.class);
             startActivity(intent);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
-            popupToast("Done result = " + result.toString());
+            popupToast("Error = " + result.toString());
         }
     }
 }
